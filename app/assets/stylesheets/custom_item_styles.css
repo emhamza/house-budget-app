@@ -1,0 +1,77 @@
+/* app/assets/stylesheets/styles.css */
+
+/* Header Styles */
+.header {
+  background-color: #3778c2;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 1.875rem;
+  color: white;
+}
+
+.header-icon {
+  fill: none;
+  height: 24px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 24px;
+}
+
+/* Error Message Styles */
+.error-container {
+  text-align: center;
+  margin-top: 1rem;
+  color: #f56565;
+}
+
+.error-list {
+  font-weight: bold;
+}
+
+/* Form Styles */
+.form-container {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-field {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.form-number-field {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+/* Checkbox Styles */
+.checkbox-container {
+  padding: 1rem;
+  background-color: white;
+}
+
+.checkbox-label {
+  margin-left: 0.5rem;
+}
+
+/* Submit Button Styles */
+.submit-button {
+  background-color: #3778c2;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

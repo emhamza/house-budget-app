@@ -1,0 +1,44 @@
+<div class="flex flex-col">
+  <div class="bg-primary h-24 w-screen flex items-center">
+    <div class="flex justify-around items-center w-screen text-primary">
+      <%= link_to root_path, class: "mr-4" do %>
+        <!-- Add your SVG icon here -->
+      <% end %>
+      <h1 class="text-3xl">New Item</h1>
+    </div>
+  </div>
+
+  <% if @item.errors.any? %>
+    <div class="text-red-500 text-center mt-4">
+      <p><%= pluralize(@item.errors.count, "error") %> Found:</p>
+      <ul class="font-bold">
+        <% @item.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form_with model: @item, url: balance_items_path, method: :post do |form| %>
+    <div class="flex flex-col w-full p-4">
+      <%= form.text_field :name, placeholder: 'Name', required: true, class: "p-2 border rounded" %>
+      <%= form.number_field :amount, placeholder: 'Amount', required: true, class: "p-2 border rounded mt-2" %>
+
+      <div class="p-4 bg-white mt-4">
+        <p class="font-bold">Choose Balance Sheet to Add this item</p>
+        <div class="flex flex-wrap gap-3 px-5">
+          <% @balances.each do |balance| %>
+            <% checked = balance.id.to_i == params[:balance_id].to_i ? { checked: true } : {} %>
+            <div class="flex items-center gap-3">
+              <%= form.check_box :selected_ids, balance.id, { multiple: true }.merge(checked), nil, class: "mr-2" %>
+              <%= label_tag "balance_#{balance.id}", balance.name %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <span class="mt-6 mx-auto">
+        <%= form.submit "Save Item", class: "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" %>
+      </span>
+    </div>
+  <% end %>
+</div>

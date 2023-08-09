@@ -1,0 +1,56 @@
+/* Header styles */
+.bg-header {
+    background-color: #3778c2;
+    height: 24px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  
+  .header-svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  
+  .text-header {
+    font-size: 1.5rem;
+  }
+  
+  .search-svg {
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  /* Error message styles */
+  .error-message {
+    color: #f56565;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Form styles */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+  
+  .input-field {
+    width: 100%;
+  }
+  
+  .submit-button {
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  

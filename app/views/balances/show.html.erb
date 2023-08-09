@@ -1,0 +1,39 @@
+<%= stylesheet_link_tag "balance_details", media: "all", "data-turbolinks-track": "reload" %>
+
+
+<div class="flex flex-col">
+  <div class="bg-header">
+    <div class="flex justify-around items-center w-screen text-white">
+      <%= link_to '<', root_path %>
+      <h1 class="text-header">DETAILS</h1>
+      <p></p>
+    </div>
+  </div>
+  <div class="details-container">
+    <div class="item-container">
+      <div class="item-header">
+        <img class="item-icon" src=<%= @balance.icon %> alt=<%= @balance.name%> >
+        <p class="item-name"><%= @balance.name.capitalize%></p>
+      </div>
+      <% total = 0 %>
+      <% @balance.items.each do |item| %>
+        <div class="flex flex-col">
+          <div class="flex justify-between">
+            <p class="pt-3 text-bold text-2xl"><%= item.name %></p>
+            <p class="pt-3 text-bold text-xl">$<%= item.amount %></p>
+          </div>
+          <p class="text-gray-400 text-sm"><%= item.created_at.strftime('%d-%b-%Y') %></p>
+        </div>
+        <% total += item.amount %>
+      <% end %>
+      <div class="total-payment">
+        <p>TOTAL PAYMENT</p>
+        <p>$<%= total %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fab">
+  <%= link_to '+', new_balance_item_path(@balance.id), class: "fab-icon" %>
+</div>

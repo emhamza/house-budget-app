@@ -10,6 +10,19 @@
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+    <main class="container flex">
+      <div class="absolute top-0 right-0 bg-gray-300 h-screen w-screen -z-10"></div>
+      <div class="absolute right-50 w-screen flex justify-center">
+        <p class="text-green-500"><%= notice %></p>
+        <p class="text-red-500"><%= alert %></p>
+      </div>
+      <% if user_signed_in? %>
+        <span class="absolute top-3 right-6 text-white">
+          <%= button_to "Log out", '/users/sign_out', method: :delete, data: { turbo: false } %>
+        </span>
+      <% end %>
+      <%= yield %>
+    </main>
+</body>
+
 </html>

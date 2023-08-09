@@ -1,0 +1,88 @@
+/* app/assets/stylesheets/balances.css */
+
+/* Header styles */
+.bg-header {
+    background-color: #3778c2;
+    height: 48px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  
+  .header-svg {
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+  
+  .text-header {
+    font-size: 1.5rem;
+  }
+  
+  .search-svg {
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  /* Balance item styles */
+  .balance-item {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .balance-icon {
+    height: 64px;
+    width: 64px;
+  }
+  
+  .balance-details {
+    flex: 1;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  
+  .balance-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .balance-date {
+    color: #a0aec0;
+  }
+  
+  .balance-amount {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Floating add button */
+  .add-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    background-color: #5fb523;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: white;
+  }
+  
