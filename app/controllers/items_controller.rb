@@ -12,7 +12,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = Item.new(item_params.merge(author_id: current_user.id))
+    @item = Item.new(name: params[:item][:name], amount: params[:item][:amount], author_id: current_user.id)
     if params[:item][:selected_ids].present?
       if save_and_balance_item
         redirect_to balance_path(params[:balance_id])

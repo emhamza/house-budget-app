@@ -1,77 +1,93 @@
-/* app/assets/stylesheets/styles.css */
-
-/* Header Styles */
-.header {
-  background-color: #3778c2;
-  height: 6rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-.header-title {
-  font-size: 1.875rem;
+/* Header */
+h1 {
   color: white;
 }
 
-.header-icon {
-  fill: none;
-  height: 24px;
+.header-svg {
+  fill: white;
+}
+
+.text-3xl {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.search-svg2 {
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2;
-  width: 24px;
+  vertical-align: middle;
+  margin-top: -3rem;
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 5rem;
+  margin-bottom: -4rem;
+  color: white;
 }
 
-/* Error Message Styles */
-.error-container {
+/* Error message */
+.error-message {
+  color: red;
   text-align: center;
   margin-top: 1rem;
-  color: #f56565;
 }
 
-.error-list {
+/* Form */
+.item-form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.form-fields {
+  margin-bottom: 2rem;
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="number"] {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.balance-chooser {
+  padding: 1rem 0;
+}
+
+.font-bold {
   font-weight: bold;
 }
 
-/* Form Styles */
-.form-container {
-  flex-direction: column;
-  padding: 1rem;
+.balance-option {
+  display: flex;
+  align-items: center;
 }
 
-.form-field {
-  padding: 0.5rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.25rem;
-  margin-top: 0.5rem;
+.balance-option input[type="checkbox"] {
+  margin-right: 0.5rem;
 }
 
-.form-number-field {
-  padding: 0.5rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.25rem;
-  margin-top: 0.5rem;
-}
-
-/* Checkbox Styles */
-.checkbox-container {
-  padding: 1rem;
-  background-color: white;
-}
-
-.checkbox-label {
-  margin-left: 0.5rem;
-}
-
-/* Submit Button Styles */
-.submit-button {
+.submit-button input[type="submit"] {
   background-color: #3778c2;
   color: white;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 0.25rem;
-  padding: 0.5rem 1rem;
   cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button input[type="submit"]:hover {
+  background-color: #285f9e;
+}
+
+.header-right {
+  margin-left: 10rem;
+  margin-top: -2rem;
 }

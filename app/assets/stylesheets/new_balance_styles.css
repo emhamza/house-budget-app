@@ -1,56 +1,78 @@
 /* Header styles */
 .bg-header {
-    background-color: #3778c2;
-    height: 24px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-  }
-  
-  .header-svg {
-    width: 24px;
-    height: 24px;
-    fill: white;
-  }
-  
-  .text-header {
-    font-size: 1.5rem;
-  }
-  
-  .search-svg {
-    stroke: currentColor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 2;
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-  }
-  
-  /* Error message styles */
-  .error-message {
-    color: #f56565;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  /* Form styles */
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1rem;
-    gap: 1rem;
-  }
-  
-  .input-field {
-    width: 100%;
-  }
-  
-  .submit-button {
-    padding-top: 1.5rem;
-    text-align: center;
-  }
-  
+  background-color: #3778c2;
+  height: 24px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.header-svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.text-header {
+  font-size: 1.5rem;
+}
+
+.search-svg1 {
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+  margin-top: -3rem;
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 5rem;
+  margin-bottom: -3rem;
+}
+
+/* Error message styles */
+.error-message {
+  color: #f56565;
+  text-align: center;
+  font-weight: bold;
+}
+
+.back-btn {
+  color: white;
+  margin-right: 5rem;
+}
+
+/* forms.css */
+
+.form-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.input-field {
+  margin-bottom: 1.5rem;
+  margin-right: 2%;
+}
+
+.input-field label {
+  font-weight: bold;
+  display: block;
+}
+
+.input-field input[type="text"],
+.input-field input[type="url"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.input-field input[type="text"]:focus,
+.input-field input[type="url"]:focus {
+  outline: none;
+  border-color: #3778c2;
+  margin-left: 0%;
+}

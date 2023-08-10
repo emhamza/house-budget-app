@@ -1,15 +1,28 @@
-<div class="flex flex-col">
-  <div class="bg-primary h-24 w-screen flex items-center">
-    <div class="flex justify-around items-center w-screen text-primary">
-      <%= link_to root_path, class: "mr-4" do %>
-        <!-- Add your SVG icon here -->
-      <% end %>
-      <h1 class="text-3xl">New Item</h1>
-    </div>
+<%= stylesheet_link_tag "custom_item_styles", media: "all", "data-turbolinks-track": "reload" %>
+
+
+<div >
+  <div class="bg-header">
+    <%= link_to root_path, class: "header-link" do %>
+      <div class="header-left">
+        <svg class="header-svg" viewBox="0 0 100 80" width="40" height="40" fill="white">
+          <rect width="100" height="10"></rect>
+          <rect y="30" width="100" height="10"></rect>
+          <rect y="60" width="100" height="10"></rect>
+        </svg>
+        <h1 class="text-3xl">New Item</h1>
+      </div>
+      <div class="header-right">
+        <svg class="search-svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+        </svg>
+      </div>
+    <% end %>
   </div>
 
   <% if @item.errors.any? %>
-    <div class="text-red-500 text-center mt-4">
+    <div class="error-message">
       <p><%= pluralize(@item.errors.count, "error") %> Found:</p>
       <ul class="font-bold">
         <% @item.errors.full_messages.each do |message| %>
@@ -19,25 +32,25 @@
     </div>
   <% end %>
 
-  <%= form_with model: @item, url: balance_items_path, method: :post do |form| %>
-    <div class="flex flex-col w-full p-4">
-      <%= form.text_field :name, placeholder: 'Name', required: true, class: "p-2 border rounded" %>
-      <%= form.number_field :amount, placeholder: 'Amount', required: true, class: "p-2 border rounded mt-2" %>
+  <%= form_with model: @item, url: balance_items_path, method: :post, class: "item-form" do |form| %>
+    <div class="form-fields">
+      <%= form.text_field :name, placeholder: 'Name', required: true %>
+      <%= form.number_field :amount, placeholder: 'Amount', required: true %>
 
-      <div class="p-4 bg-white mt-4">
+      <div class="balance-chooser">
         <p class="font-bold">Choose Balance Sheet to Add this item</p>
-        <div class="flex flex-wrap gap-3 px-5">
+        <div class="balance-options">
           <% @balances.each do |balance| %>
             <% checked = balance.id.to_i == params[:balance_id].to_i ? { checked: true } : {} %>
-            <div class="flex items-center gap-3">
-              <%= form.check_box :selected_ids, balance.id, { multiple: true }.merge(checked), nil, class: "mr-2" %>
+            <div class="balance-option">
+              <%= form.check_box :selected_ids, { multiple: true }.merge(checked), balance.id, nil %>
               <%= label_tag "balance_#{balance.id}", balance.name %>
             </div>
           <% end %>
         </div>
       </div>
-      <span class="mt-6 mx-auto">
-        <%= form.submit "Save Item", class: "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" %>
+      <span class="submit-button">
+        <%= form.submit "Save Item" %>
       </span>
     </div>
   <% end %>

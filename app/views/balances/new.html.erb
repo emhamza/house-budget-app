@@ -1,12 +1,12 @@
 <%= stylesheet_link_tag "new_balance_styles", media: "all", "data-turbolinks-track": "reload" %>
 
 
-<div class="flex flex-col">
+<div class="balance-sheet-index">
   <div class="bg-header">
-    <div class="flex justify-around items-center w-screen text-white">
-      <%= link_to '<', root_path %>
+    <div class="balance-head">
+      <%= link_to '<', root_path, class: "back-btn" %>
       <h1 class="text-header">NEW BALANCE SHEET</h1>
-      <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <svg class="search-svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <circle cx="11" cy="11" r="8"/>
         <line x1="21" x2="16.65" y1="21" y2="16.65"/>
       </svg>
@@ -34,8 +34,8 @@
       <%= form.text_field :icon, placeholder: 'icon URL', required: true %>
     </div>
 
-    <div class="submit-button">
+    <div class="actions">
       <%= form.submit 'Save' %>
     </div>
-  <% end %>
+    <% end %>
 </div>
