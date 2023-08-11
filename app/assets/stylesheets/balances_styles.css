@@ -13,30 +13,19 @@ a {
   background-color: azure;
 }
 
-.bg-header {
+.bg-header-balance {
   background-color: #3778c2;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
-  padding: 5% 0;
-  gap: 8%;
+  padding: 1rem;
+
+  /* gap: 4rem; */
 }
 
 .header-svg {
   fill: white;
-}
-
-@media (max-width: 700px) {
-  .search-svg,
-  .header-svg {
-    display: none;
-  }
-
-  .text-header {
-    font-size: 1.25rem;
-    margin: 0;
-  }
 }
 
 .balance-item {
@@ -105,4 +94,19 @@ a {
 
 .add-button:hover {
   background-color: #438d1a;
+}
+
+.balance-header {
+  font-size: 1rem;
+}
+
+#src-svg {
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
 }

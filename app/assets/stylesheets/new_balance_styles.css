@@ -1,31 +1,19 @@
 /* Header styles */
-
-/* .bg-header {
-  background-color: #3778c2;
-  height: 24px;
-  width: 100vw;
+.bg-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  color: white;
-} */
+}
 
-/* .header-svg {
-  width: 24px;
-  height: 24px;
-  fill: white;
-} */
+.back-btn {
+  color: white;
+  margin-left: -4rem;
+}
 
 .text-header {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-@media (max-width: 700px) {
-  .search-svg1,
-  .back-btn {
-    display: none;
-  }
-}
 
 /* Error message styles */
 .error-message {
@@ -34,10 +22,6 @@
   font-weight: bold;
 }
 
-.back-btn {
-  color: white;
-  margin-right: 5rem;
-}
 
 /* forms.css */
 

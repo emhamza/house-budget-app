@@ -147,38 +147,3 @@ body {
   color: white;
   width: 100vw;
 }
-
-@media (min-width: 700px) {
-  .header-svg,
-  .header-svg1,
-  .header-svg2 {
-    width: 3rem;
-    fill: white;
-    margin-left: -2rem;
-  }
-
-  .text-header {
-    font-size: 2rem;
-    padding-left: 10rem;
-  }
-
-  .search-svg,
-  .search-svg2,
-  .search-svg1 {
-    stroke: currentColor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 2;
-    vertical-align: middle;
-    fill: white;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 5rem;
-    margin-bottom: -3rem;
-  }
-
-  .back-btn {
-    padding: 0;
-    margin-left: -3rem;
-  }
-}
