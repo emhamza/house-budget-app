@@ -19,47 +19,24 @@ a {
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 5%;
-}
-
-.balance-head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 5% 0;
+  gap: 8%;
 }
 
 .header-svg {
   fill: white;
-  margin-left: -10rem;
-  margin-bottom: -10%;
 }
 
-.text-header {
-  font-size: 2.5rem;
-  line-height: 2rem;
-  margin: 0;
-}
+@media (max-width: 700px) {
+  .search-svg,
+  .header-svg {
+    display: none;
+  }
 
-.search-svg {
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-  margin-top: -3rem;
-  fill: white;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-left: 5rem;
-  margin-bottom: -4rem;
-}
-
-.w-screen {
-  width: 100%;
-}
-
-.p-3 {
-  list-style: none;
+  .text-header {
+    font-size: 1.25rem;
+    margin: 0;
+  }
 }
 
 .balance-item {
@@ -89,7 +66,8 @@ a {
 .balance-amount {
   font-size: 1.2rem;
   margin: 0;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  color: #888;
   font-family: "Proxima Nova Light", sans-serif; /* Apply font family */
 }
 
