@@ -7,7 +7,7 @@ RSpec.describe Balance, type: :model do
                           password: '123456', password_confirmation: '123456')
   end
 
-  subject { Item.new(name: 'Grocery', icon: 'url', auhtor: @osman) }
+  subject { Item.new(name: 'Grocery', amount: 232, author_id: @osman.id) }
 
   before { subject.save }
 
@@ -18,7 +18,7 @@ RSpec.describe Balance, type: :model do
     end
 
     it 'should check valid icon' do
-      subject.icon = nil
+      subject.amount = nil
       expect(subject).to_not be_valid
     end
 

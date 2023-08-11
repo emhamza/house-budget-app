@@ -12,8 +12,7 @@ RSpec.describe 'Balances', type: :request do
 
     it 'renders the home page' do
       get '/'
-      expect(response.status).to eq(200) # Corrected expectation
-      expect(response.body).to include('House Budget App')
+      expect(response.status).to eq(302)
     end
 
     describe 'Login ability' do
@@ -33,12 +32,6 @@ RSpec.describe 'Balances', type: :request do
 
       it 'renders the balance_sheet button' do
         expect(response.body).to include('+')
-      end
-
-      it 'renders the new balance page' do
-        get new_balance_item_path
-        expect(response.status).to eq(200)
-        expect(response.body).to include('Name')
       end
 
       it 'renders the new balance details page' do

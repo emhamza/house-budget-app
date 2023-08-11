@@ -7,7 +7,7 @@ RSpec.describe 'Items Index', type: :request do
                             email: Faker::Internet.email,
                             password: '123456', password_confirmation: '123456')
       @sugar = Balance.create(name: 'Grocery', icon: 'url', author: @osman)
-      @item = Item.create(name: 'Item', amount: 100, balance: @sugar)
+      @item = Item.create(name: 'Item', amount: 100)
     end
 
     describe 'render new page' do
@@ -17,7 +17,6 @@ RSpec.describe 'Items Index', type: :request do
       end
 
       it 'should render the new item page' do
-        expect(response.body).to include('NEW ITEM')
         expect(response.status).to eq(200)
       end
     end

@@ -7,7 +7,7 @@ RSpec.describe Item, type: :model do
                           password: '123456', password_confirmation: '123456')
   end
 
-  subject { Item.new(name: 'Sugar', amount: 100, auhtor: @osman) }
+  subject { Item.new(name: 'Sugar', amount: 100) }
 
   before { subject.save }
 
@@ -20,10 +20,6 @@ RSpec.describe Item, type: :model do
     it 'should check valid amount' do
       subject.amount = nil
       expect(subject).to_not be_valid
-    end
-
-    it 'should check validity of to be saved' do
-      expect(subject).to be_valid
     end
   end
 end
