@@ -1,0 +1,94 @@
+/* Header styles */
+.bg-header {
+  background-color: #3778c2;
+  height: 24px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+
+.header-svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.text-header {
+  font-size: 1.5rem;
+}
+
+.details-container {
+  padding: 0.5rem;
+}
+
+.item-container {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.item-name {
+  flex: 1;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+/* Total payment styles */
+.total-payment {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Floating action button styles */
+.fab {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #5fb523;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+
+.fab-icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.bb-btn {
+  color: white;
+
+  /* margin-right: 10rem; */
+  margin-left: -5rem;
+}

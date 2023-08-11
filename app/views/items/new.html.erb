@@ -1,0 +1,43 @@
+<%= stylesheet_link_tag "custom_item_styles", media: "all", "data-turbolinks-track": "reload" %>
+
+<div>
+  <div class="bg-header">
+    <%= link_to root_path, class: "header-link" do %>
+        <h1 class="text-3xl">New Item</h1>
+    <% end %>
+  </div>
+
+  <% if @item.errors.any? %>
+    <div class="error-message">
+      <p><%= pluralize(@item.errors.count, "error") %> Found:</p>
+      <ul class="font-bold">
+        <% @item.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form_with model: @item, url: balance_items_path, method: :post, class: "item-form" do |form| %>
+    <div class="form-fields">
+      <%= form.text_field :name, placeholder: 'Name', required: true %>
+      <%= form.number_field :amount, placeholder: 'Amount', required: true %>
+
+      <div class="balance-chooser">
+        <p class="font-bold">Choose Balance Sheet to Add this item</p>
+        <div class="balance-options">
+          <% @balances.each do |balance| %>
+            <% checked = balance.id.to_i == params[:balance_id].to_i ? { checked: true } : {} %>
+            <div class="balance-option">
+              <%= form.check_box :selected_ids, { multiple: true }.merge(checked), balance.id, nil %>
+              <%= label_tag "balance_#{balance.id}", balance.name %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <span class="submit-button">
+        <%= form.submit "Save Item" %>
+      </span>
+    </div>
+  <% end %>
+</div>

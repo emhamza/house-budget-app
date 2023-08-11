@@ -1,0 +1,35 @@
+<%= stylesheet_link_tag "new_balance_styles", media: "all", "data-turbolinks-track": "reload" %>
+
+
+<div class="balance-sheet-index">
+  <div class="bg-header">
+      <%= link_to '<', root_path, class: "back-btn" %>
+      <h1 class="text-header">NEW BALANCE SHEET</h1>
+  </div>
+
+  <% if @balance.errors.any? %>
+    <div class="error-message">
+      <p><%= pluralize(@balance.errors.count, "error") %> found:</p>
+
+      <ul>
+        <% @balance.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form_with model: @balance, url: balances_path, method: :post, class: "form-container" do |form| %>
+    <div class="input-field">
+      <%= form.text_field :name, placeholder: 'Name', required: true %>
+    </div>
+
+    <div class="input-field">
+      <%= form.text_field :icon, placeholder: 'icon URL', required: true %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit 'Save' %>
+    </div>
+    <% end %>
+</div>
