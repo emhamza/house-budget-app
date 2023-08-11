@@ -10,6 +10,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Run tests](#run-tests)
+- [🚀 Live Demo](#live-demo)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -101,12 +102,15 @@ Example command:
 
 ```sh
 rspec
-bundle exec rspec spec/system
+bundle exec rspec spec
 ```
 
 ```sh
 rubocop -A
 ```
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [<a href="https://house-budget-app.onrender.com" target="_blank">Online version</a>](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
