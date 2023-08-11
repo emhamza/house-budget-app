@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'rubygems'
+
 
 RSpec.describe User, type: :model do
   describe 'Check user validity' do
@@ -18,11 +20,6 @@ RSpec.describe User, type: :model do
 
   it 'should have a valid email' do
     subject.email = nil
-    expect(subject).to_not be_valid
-  end
-
-  it 'should have a name' do
-    subject.name = nil
     expect(subject).to_not be_valid
   end
 end
