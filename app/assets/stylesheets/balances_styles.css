@@ -1,0 +1,130 @@
+/* balance_sheet_styles.css */
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.balance-sheet-index {
+  background-color: azure;
+}
+
+.bg-header {
+  background-color: #3778c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 5%;
+}
+
+.balance-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-svg {
+  fill: white;
+  margin-left: -10rem;
+  margin-bottom: -10%;
+}
+
+.text-header {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.search-svg {
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+  margin-top: -3rem;
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 5rem;
+  margin-bottom: -4rem;
+}
+
+.w-screen {
+  width: 100%;
+}
+
+.p-3 {
+  list-style: none;
+}
+
+.balance-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 5%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.balance-icon {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.balance-details {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.balance-name,
+.balance-date,
+.balance-amount {
+  font-size: 1.2rem;
+  margin: 0;
+  text-decoration: none; /* Remove underline */
+  font-family: "Proxima Nova Light", sans-serif; /* Apply font family */
+}
+
+.balance-date {
+  color: #888;
+}
+
+.balance-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3778c2;
+}
+
+.add-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #5fb523;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-button-link {
+  color: white;
+  text-decoration: none;
+}
+
+.add-button:hover {
+  background-color: #438d1a;
+}

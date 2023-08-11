@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag "home_styles", media: "all", "data-turbolinks-track": "reload" %>
+
+<div class="home-container">
+  <div class="home-heading">House Budget App</div>
+  <%# <div></div> %>
+  <div class="home-buttons">
+    <%= link_to "LOG IN", new_user_session_path, class: "home-login-button" %>
+    <%= link_to "SIGN UP", new_user_registration_path, class: "home-signup-button" %>
+  </div>
+</div>

@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <main class="nav-container">
+      <div class="atert-msg">
+        <p><%= notice %></p>
+        <p><%= alert %></p>
+      </div>
+      <% if user_signed_in? %>
+          <%= button_to "Log out", '/users/sign_out', method: :delete, data: { turbo: false }, class: "logout-btn" %>
+      <% end %>
+    </main>
     <%= yield %>
-  </body>
+</body>
+
 </html>

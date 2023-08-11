@@ -1,0 +1,93 @@
+/* Header */
+h1 {
+  color: white;
+}
+
+.header-svg {
+  fill: white;
+}
+
+.text-3xl {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.search-svg2 {
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+  margin-top: -3rem;
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 5rem;
+  margin-bottom: -4rem;
+  color: white;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Form */
+.item-form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.form-fields {
+  margin-bottom: 2rem;
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="number"] {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.balance-chooser {
+  padding: 1rem 0;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.balance-option {
+  display: flex;
+  align-items: center;
+}
+
+.balance-option input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.submit-button input[type="submit"] {
+  background-color: #3778c2;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button input[type="submit"]:hover {
+  background-color: #285f9e;
+}
+
+.header-right {
+  margin-left: 10rem;
+  margin-top: -2rem;
+}
