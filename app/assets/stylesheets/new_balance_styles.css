@@ -1,36 +1,17 @@
 /* Header styles */
 .bg-header {
-  background-color: #3778c2;
-  height: 24px;
-  width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  color: white;
 }
 
-.header-svg {
-  width: 24px;
-  height: 24px;
-  fill: white;
+.back-btn {
+  color: white;
+  margin-left: -4rem;
 }
 
 .text-header {
-  font-size: 1.5rem;
-}
-
-.search-svg1 {
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-  margin-top: -3rem;
-  fill: white;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-left: 5rem;
-  margin-bottom: -3rem;
+  font-size: 1rem;
 }
 
 /* Error message styles */
@@ -40,16 +21,10 @@
   font-weight: bold;
 }
 
-.back-btn {
-  color: white;
-  margin-right: 5rem;
-}
-
 /* forms.css */
-
 .form-container {
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 2rem 2rem 2rem 1rem;
   max-width: 100%;
 }
 

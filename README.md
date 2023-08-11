@@ -6,6 +6,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+  - [Tech Stack](#tech-stack)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -33,6 +34,28 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Version Control</summary>
+  <ul>
+    <li><a href="https://github.com/">Git Hub</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Visual Studio Code</summary>
+  <ul>
+    <li><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://html.com/html5/">HTML5</a></li>
+    <li><a href="https://www.css3.com/">CSS</a></li>
+  </ul>
+</details>
+ 
 ## Key Features
 
 - User Authentication

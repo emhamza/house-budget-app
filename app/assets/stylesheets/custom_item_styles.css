@@ -13,19 +13,15 @@ h1 {
   margin: 0;
 }
 
-.search-svg2 {
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-  margin-top: -3rem;
-  fill: white;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-left: 5rem;
-  margin-bottom: -4rem;
-  color: white;
+@media (max-width: 700px) {
+  .search-svg2 {
+    display: none;
+  }
+
+  .text-3xl {
+    font-size: 2.5rem;
+    line-height: 0rem;
+  }
 }
 
 /* Error message */
@@ -39,7 +35,7 @@ h1 {
 .item-form {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 3rem 2rem 0.5rem;
   border: 1px solid #ccc;
   background-color: #fff;
 }

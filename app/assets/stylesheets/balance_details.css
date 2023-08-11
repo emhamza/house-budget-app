@@ -4,9 +4,11 @@
   height: 24px;
   width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: white;
+  padding-bottom: 2rem;
+  gap: 2rem;
 }
 
 .header-svg {
@@ -19,7 +21,6 @@
   font-size: 1.5rem;
 }
 
-/* Details container styles */
 .details-container {
   padding: 0.5rem;
 }
@@ -87,6 +88,7 @@
 
 .bb-btn {
   color: white;
-  margin-right: 10rem;
-  margin-left: -10rem;
+
+  /* margin-right: 10rem; */
+  margin-left: -5rem;
 }

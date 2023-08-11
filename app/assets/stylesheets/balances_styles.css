@@ -13,53 +13,19 @@ a {
   background-color: azure;
 }
 
-.bg-header {
+.bg-header-balance {
   background-color: #3778c2;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
-  padding: 5%;
-}
+  padding: 1rem;
 
-.balance-head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* gap: 4rem; */
 }
 
 .header-svg {
   fill: white;
-  margin-left: -10rem;
-  margin-bottom: -10%;
-}
-
-.text-header {
-  font-size: 2.5rem;
-  line-height: 2rem;
-  margin: 0;
-}
-
-.search-svg {
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-  margin-top: -3rem;
-  fill: white;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-left: 5rem;
-  margin-bottom: -4rem;
-}
-
-.w-screen {
-  width: 100%;
-}
-
-.p-3 {
-  list-style: none;
 }
 
 .balance-item {
@@ -89,7 +55,8 @@ a {
 .balance-amount {
   font-size: 1.2rem;
   margin: 0;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  color: #888;
   font-family: "Proxima Nova Light", sans-serif; /* Apply font family */
 }
 
@@ -127,4 +94,19 @@ a {
 
 .add-button:hover {
   background-color: #438d1a;
+}
+
+.balance-header {
+  font-size: 1rem;
+}
+
+#src-svg {
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
 }

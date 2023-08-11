@@ -46,6 +46,12 @@ body {
   background-color: #fff;
 }
 
+@media (max-width: 700px) {
+  .login-form {
+    padding: 2rem 3rem 2rem 0.5rem;
+  }
+}
+
 .field {
   margin-bottom: 15px;
 }
