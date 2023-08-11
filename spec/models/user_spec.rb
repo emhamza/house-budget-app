@@ -1,7 +1,6 @@
 require 'rails_helper'
 require 'rubygems'
 
-
 RSpec.describe User, type: :model do
   describe 'Check user validity' do
     subject do
