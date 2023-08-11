@@ -14,7 +14,6 @@
   font-size: 1rem;
 }
 
-
 /* Error message styles */
 .error-message {
   color: #f56565;
@@ -22,9 +21,7 @@
   font-weight: bold;
 }
 
-
 /* forms.css */
-
 .form-container {
   margin-top: 2rem;
   padding: 2rem 2rem 2rem 1rem;
