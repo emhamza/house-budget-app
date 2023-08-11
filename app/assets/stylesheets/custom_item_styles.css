@@ -4,7 +4,7 @@ h1 {
 }
 
 .header-svg {
-  display: none;
+  fill: white;
 }
 
 .text-3xl {
@@ -13,11 +13,11 @@ h1 {
   margin: 0;
 }
 
-.search-svg2 {
-  display: none;
-}
-
 @media (max-width: 700px) {
+  .search-svg2 {
+    display: none;
+  }
+
   .text-3xl {
     font-size: 2.5rem;
     line-height: 0rem;

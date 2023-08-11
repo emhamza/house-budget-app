@@ -149,24 +149,6 @@ body {
 }
 
 @media (min-width: 700px) {
-  /* .bg-header { */
-
-  /* display: flex; */
-
-  /* background-color: #3778c2; */
-
-  /* height: 24px; */
-
-  /* width: 100vw; */
-
-  /* justify-content: space-around; */
-
-  /* align-items: center; */
-
-  /* color: white; */
-
-  /* } */
-
   .header-svg,
   .header-svg1,
   .header-svg2 {
@@ -193,5 +175,10 @@ body {
     height: 1.5rem;
     margin-left: 5rem;
     margin-bottom: -3rem;
+  }
+
+  .back-btn {
+    padding: 0;
+    margin-left: -3rem;
   }
 }
